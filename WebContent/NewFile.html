@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+table, td, th {  
+  border: 2px solid #000;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  padding: 15px;
+}
+body {
+  background-image: url('background2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<form action="teamadd" method="post" enctype="multipart/form-data">
+<center>
+<br>
+<br>
+<br>
+<h2>ENTER TEAM DATA</h2>
+	<table>
+			<tr>
+				<td>Team ID:</td>
+				<td><input type="text" style="border: 1px solid #000 ;background:transparent; color:black;" name="team_id"></td>
+			</tr>	
+			<tr>
+				<td>Team Name:</td>
+				<td><input type="text" style="border: 1px solid #000 ;background:transparent; color:black;" name="team_name"></td>
+			</tr>
+			<tr>
+				<td>ODI Rank:</td>
+				<td><input type="text" style="border: 1px solid #000 ;background:transparent; color:black;" name="team_odi_rank" value="0"></td>
+			</tr>
+			<tr>
+				<td>Test Rank:</td>
+				<td><input type="text" style="border: 1px solid #000 ;background:transparent; color:black;" name="team_test_rank" value="0"></td>
+			</tr>
+			<tr>
+				<td>Cups Won:</td>
+				<td><input type="text" style="border: 1px solid #000 ;background:transparent; color:black;" name="team_cups_won"></td>
+			</tr>
+			
+
+			<td>SUBMIT  DATA	</td>
+				<td><input type="submit" value="ADD TEAM"></td>
+			</tr>
+		</table>
+		</center>
+		
+	</form>
+	<br>
+	<br>
+	<br>	
+	<center>
+<a href="trial.jsp">
+   <button >View  Teams</button>
+</a>
+</center>
+</body>
+</html>
